@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
-import android.widget.FrameLayout.LayoutParams;
 
 public class RidingDroidActivity extends Activity {
 
@@ -61,10 +60,7 @@ public class RidingDroidActivity extends Activity {
     }
 
     private void moveDroidWithoutAnimation() {
-        LayoutParams params = (LayoutParams) droid.getLayoutParams();
-        params.leftMargin = rideLength;
-
-        droid.setLayoutParams(params);
+        //TODO
     }
 
     private void resetDroid() {
